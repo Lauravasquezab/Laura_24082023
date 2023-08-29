@@ -67,9 +67,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="estilos\botones.css" />
+    <Content Include="estilos\cajas.css" />
+    <Content Include="estilos\div.css" />
+    <Content Include="estilos\label.css" />
+    <Content Include="Frm_simulador.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cls_calcular.cs" />
+    <Compile Include="cls_conexion.cs" />
+    <Compile Include="Frm_simulador.aspx.cs">
+      <DependentUpon>Frm_simulador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frm_simulador.aspx.designer.cs">
+      <DependentUpon>Frm_simulador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_simulador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

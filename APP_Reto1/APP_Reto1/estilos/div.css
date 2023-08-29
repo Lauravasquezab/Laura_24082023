@@ -1,0 +1,14 @@
+﻿/* div.css */
+div {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #808080d6;
+    background-color: #f9f9f9;
+}
+
+h3 {
+    color: #ff0000;
+}
+
+/* Otros estilos de div que puedas necesitar */
