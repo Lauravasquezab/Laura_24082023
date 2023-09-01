@@ -6,65 +6,67 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <link href="estilos/div.css" rel="stylesheet" type="text/css" />
-    <link href="estilos/label.css" rel="stylesheet" type="text/css" />
+  <link href="estilos/div.css" rel="stylesheet" type="text/css" />
+   <%--   <link href="estilos/label.css" rel="stylesheet" type="text/css" />
     <link href="estilos/cajas.css" rel="stylesheet" type="text/css" />
-    <link href="estilos/botones.css" rel="stylesheet" type="text/css" />
-    <style type="text/css">
-    </style>
+    <link href="estilos/botones.css" rel="stylesheet" type="text/css" />--%>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
 </head>
 <body>
      <form id="form1" runat="server">
         <center>
             <br />
-            <div id="div">
+            <div class="campo-group" id="div">
                 <br />
-                <h3>Simulador de Crédito</h3>
-                <label for="txtPKItem">PKitem:</label>
-                <asp:TextBox ID="txtPKItem" runat="server" CssClass="cajas" OnTextChanged="txtPKItem_TextChanged" Width="128px"></asp:TextBox>
+                <h2>Simulador de Crédito</h2>
                 <br />
-                <label for="txtId">Id:</label>
-                <asp:TextBox ID="txtId" runat="server" CssClass="cajas" Width="163px"></asp:TextBox>
+                <br />
+                <br />
+                
+             
+                <asp:TextBox placeholder="Identificación" ID="txtId" runat="server" Class="form-control"></asp:TextBox>
+                
                 <!-- Resto de los campos del formulario -->
                 <br />
-                <asp:Label ID="Label1" runat="server" Text="Nombre"></asp:Label>
-                <asp:TextBox ID="txtPKItem0" runat="server" CssClass="cajas" OnTextChanged="txtPKItem_TextChanged" Width="128px"></asp:TextBox>
+             
+                <asp:TextBox placeholder="Nombres" ID="txtPKItem0" runat="server" Class="form-control" OnTextChanged="txtPKItem_TextChanged"></asp:TextBox>
                 <br />
-                <asp:Label ID="Label2" runat="server" Text="Segundo Nombre"></asp:Label>
-                <asp:TextBox ID="txtPKItem1" runat="server" CssClass="cajas" OnTextChanged="txtPKItem_TextChanged" Width="128px"></asp:TextBox>
+                    
+                <asp:TextBox placeholder="Apellidos" ID="txtPKItem1" runat="server" Class="form-control" OnTextChanged="txtPKItem_TextChanged"></asp:TextBox>
                 <br />
-                <asp:Label ID="Label3" runat="server" Text="Apellido"></asp:Label>
-                <asp:TextBox ID="txtPKItem2" runat="server" CssClass="cajas" OnTextChanged="txtPKItem_TextChanged" Width="128px"></asp:TextBox>
+                         
+                <asp:TextBox placeholder="Contacto" ID="txtPKItem2" runat="server" Class="form-control" OnTextChanged="txtPKItem_TextChanged"></asp:TextBox>
                 <br />
-                <asp:Label ID="Label4" runat="server" Text="Contacto"></asp:Label>
-                <asp:TextBox ID="txtPKItem3" runat="server" CssClass="cajas" OnTextChanged="txtPKItem_TextChanged" Width="128px"></asp:TextBox>
+                              
+                <asp:TextBox placeholder="Correo" ID="txtPKItem3" runat="server" Class="form-control" OnTextChanged="txtPKItem_TextChanged"></asp:TextBox>
                 <br />
-                <asp:Label ID="Label5" runat="server" Text="Correo"></asp:Label>
-                <asp:TextBox ID="txtPKItem4" runat="server" CssClass="cajas" OnTextChanged="txtPKItem_TextChanged" Width="128px"></asp:TextBox>
+                                 
+                <asp:TextBox placeholder="Dirección" ID="txtPKItem4" runat="server" Class="form-control" OnTextChanged="txtPKItem_TextChanged"></asp:TextBox>
                 <br />
-                <asp:Label ID="Label6" runat="server" Text="Dirección"></asp:Label>
-                <asp:TextBox ID="txtPKItem5" runat="server" CssClass="cajas" OnTextChanged="txtPKItem_TextChanged" Width="128px"></asp:TextBox>
+                                      
+                <asp:TextBox placeholder="Estado" ID="txtPKItem5" runat="server" Class="form-control" OnTextChanged="txtPKItem_TextChanged"></asp:TextBox>
                 <br />
-                <asp:Label ID="Label7" runat="server" Text="Estado"></asp:Label>
-                <asp:TextBox ID="txtPKItem6" runat="server" CssClass="cajas" OnTextChanged="txtPKItem_TextChanged" Width="128px"></asp:TextBox>
+                                             
+                <asp:TextBox placeholder="Salario" ID="txtPKItem6" runat="server" Class="form-control" OnTextChanged="txtPKItem_TextChanged"></asp:TextBox>
+                <br />      
+                <asp:TextBox placeholder="Empresa" ID="txtPKItem9" runat="server" Class="form-control" OnTextChanged="txtPKItem_TextChanged"></asp:TextBox>
                 <br />
-                Fecha registro
-                <asp:TextBox ID="txtPKItem7" runat="server" CssClass="cajas" OnTextChanged="txtPKItem_TextChanged" Width="128px"></asp:TextBox>
+                <asp:DropDownList ID="DropDownList1" runat="server">
+                    <asp:ListItem Value="0"> 6 meses </asp:ListItem>
+                    <asp:ListItem Value="1"> 12 meses </asp:ListItem>
+                    <asp:ListItem Value="2"> 24 meses </asp:ListItem>
+                    <asp:ListItem Value="3"> 36 meses </asp:ListItem>
+                </asp:DropDownList>
                 <br />
-                <asp:Label ID="Label8" runat="server" Text="Salario"></asp:Label>
-                <asp:TextBox ID="txtPKItem8" runat="server" CssClass="cajas" OnTextChanged="txtPKItem_TextChanged" Width="128px"></asp:TextBox>
-                <br />
-                <asp:Label ID="Label9" runat="server" Text="observaciones"></asp:Label>
-                <asp:TextBox ID="txtPKItem9" runat="server" CssClass="cajas" OnTextChanged="txtPKItem_TextChanged" Width="128px"></asp:TextBox>
-                <br />
-                <asp:Label ID="Label10" runat="server" Text="Empresa"></asp:Label>
-                <asp:TextBox ID="txtPKItem10" runat="server" CssClass="cajas" OnTextChanged="txtPKItem_TextChanged" Width="128px"></asp:TextBox>
-                <br />
-                <br />
-                <br />
+                
                 <br />
                 <asp:Label ID="lblResultado" runat="server" Text=""></asp:Label>
-                <asp:Button ID="btnSimular" runat="server" Text="Simular" CssClass="btn" />
+                <asp:Button class="btn btn-success" ID="btnSimular" runat="server" Text="Simular"/>
+                <br />
+                <br />
+                <asp:TextBox placeholder="Resultado" ID="TextBox1" runat="server"></asp:TextBox>
             </div>
         </center>
          <p>
@@ -72,3 +74,5 @@
     </form>
 </body>
 </html>
+
+

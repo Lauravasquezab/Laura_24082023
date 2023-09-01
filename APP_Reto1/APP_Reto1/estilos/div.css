@@ -1,14 +1,29 @@
 ﻿/* div.css */
-div {
-    width: 500px;
+.campo-group {
     margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #808080d6;
-    background-color: #f9f9f9;
+    background-color: #f3eded;
+    width:50%;
+    padding:150px;
 }
 
-h3 {
-    color: #ff0000;
+h4 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-/* Otros estilos de div que puedas necesitar */
+
+
+
+.campo-group label {
+
+    text-align: left;
+}
+
+.campo-group .campo {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+}
