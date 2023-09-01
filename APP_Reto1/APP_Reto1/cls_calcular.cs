@@ -24,7 +24,7 @@ namespace APP_Reto1
                 try
                 {
                     cls_conexion objConecta = new cls_conexion();
-                    SqlCommand con = new SqlCommand("solicitudes", objConecta.connection);
+                    SqlCommand con = new SqlCommand("SP_registrar", objConecta.connection);
                     con.CommandType = CommandType.StoredProcedure;
                     con.Parameters.AddWithValue("@id", Pkcodigo);
                     con.Parameters.AddWithValue("@nombre", Nombre);
@@ -32,10 +32,10 @@ namespace APP_Reto1
                     con.Parameters.AddWithValue("@contacto", contacto);
                     con.Parameters.AddWithValue("@correo", correo);
                     con.Parameters.AddWithValue("@direccion", direccion);
-                    con.Parameters.AddWithValue("@empresa_labora", empresa);
+                    con.Parameters.AddWithValue("@empresa", empresa);
                     con.Parameters.AddWithValue("@salario", salario);
                     con.Parameters.AddWithValue("@monto", monto);
-                    con.Parameters.AddWithValue("@meses", meses);
+                    con.Parameters.AddWithValue("@plazo", meses);
                     objConecta.connection.Open();
                     con.ExecuteNonQuery();
                     objConecta.connection.Close();
@@ -44,7 +44,7 @@ namespace APP_Reto1
                 catch (Exception) { str_mensaje = "Este registro ya existe"; }
             }
         }
-        
+         public string getMensaje() { return this.str_mensaje; }
     }
     
 }

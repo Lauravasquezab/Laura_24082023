@@ -16,8 +16,10 @@ namespace APP_Reto1
 
         protected void btnSimular_Click(object sender, EventArgs e)
         {
-            cls_conexion objcalcular = new cls_conexion();
-            objcalcular.fnt
+            cls_calcular objUsuarios = new cls_calcular();
+            objUsuarios.fnt_agregar(txt_id.Text, txt_nombres.Text, txt_apellido.Text, txt_contacto.Text, txt_correo.Text,
+                txt_direccion.Text, txt_empresa.Text, txt_salario.Text, txt_monto.Text, cbx_meses.SelectedValue);
+            lbl_mensaje.Text = objUsuarios.getMensaje();
         }
     }
 }

@@ -24,103 +24,94 @@ namespace APP_Reto1
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control txtId.
+        /// Control txt_id.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtId;
+        protected global::System.Web.UI.WebControls.TextBox txt_id;
 
         /// <summary>
-        /// Control txtPKItem0.
+        /// Control txt_nombres.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPKItem0;
+        protected global::System.Web.UI.WebControls.TextBox txt_nombres;
 
         /// <summary>
-        /// Control txtPKItem1.
+        /// Control txt_apellido.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPKItem1;
+        protected global::System.Web.UI.WebControls.TextBox txt_apellido;
 
         /// <summary>
-        /// Control txtPKItem2.
+        /// Control  txt_contacto.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPKItem2;
+        protected global::System.Web.UI.WebControls.TextBox txt_contacto;
 
         /// <summary>
-        /// Control txtPKItem3.
+        /// Control txt_correo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPKItem3;
+        protected global::System.Web.UI.WebControls.TextBox txt_correo;
 
         /// <summary>
-        /// Control txtPKItem4.
+        /// Control txt_direccion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPKItem4;
+        protected global::System.Web.UI.WebControls.TextBox txt_direccion;
 
         /// <summary>
-        /// Control txtPKItem5.
+        /// Control txt_empresa.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPKItem5;
+        protected global::System.Web.UI.WebControls.TextBox txt_empresa;
 
         /// <summary>
-        /// Control txtPKItem6.
+        /// Control txt_salario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPKItem6;
+        protected global::System.Web.UI.WebControls.TextBox txt_salario;
 
         /// <summary>
-        /// Control txtPKItem9.
+        /// Control txt_monto.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPKItem9;
+        protected global::System.Web.UI.WebControls.TextBox txt_monto;
 
         /// <summary>
-        /// Control DropDownList1.
+        /// Control cbx_meses.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
-
-        /// <summary>
-        /// Control lblResultado.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblResultado;
+        protected global::System.Web.UI.WebControls.DropDownList cbx_meses;
 
         /// <summary>
         /// Control btnSimular.
@@ -132,12 +123,12 @@ namespace APP_Reto1
         protected global::System.Web.UI.WebControls.Button btnSimular;
 
         /// <summary>
-        /// Control TextBox1.
+        /// Control lbl_mensaje.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox lbl_mensaje;
     }
 }

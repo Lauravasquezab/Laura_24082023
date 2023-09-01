@@ -26,34 +26,36 @@
                 <br />
                 
              
-                <asp:TextBox placeholder="Identificación" ID="txtId" runat="server" Class="form-control"></asp:TextBox>
+                <asp:TextBox placeholder="Identificación" ID="txt_id" runat="server" Class="form-control"></asp:TextBox>
                 
                 <!-- Resto de los campos del formulario -->
                 <br />
              
-                <asp:TextBox placeholder="Nombres" ID="txtPKItem0" runat="server" Class="form-control" OnTextChanged="txtPKItem_TextChanged"></asp:TextBox>
+                <asp:TextBox placeholder="Nombres" ID="txt_nombres" runat="server" Class="form-control"></asp:TextBox>
                 <br />
                     
-                <asp:TextBox placeholder="Apellidos" ID="txtPKItem1" runat="server" Class="form-control" OnTextChanged="txtPKItem_TextChanged"></asp:TextBox>
+                <asp:TextBox placeholder="Apellidos" ID="txt_apellido" runat="server" Class="form-control"></asp:TextBox>
                 <br />
                          
-                <asp:TextBox placeholder="Contacto" ID="txtPKItem2" runat="server" Class="form-control" OnTextChanged="txtPKItem_TextChanged"></asp:TextBox>
+                <asp:TextBox placeholder="Contacto" ID="txt_contacto" runat="server" Class="form-control"></asp:TextBox>
                 <br />
                               
-                <asp:TextBox placeholder="Correo" ID="txtPKItem3" runat="server" Class="form-control" OnTextChanged="txtPKItem_TextChanged"></asp:TextBox>
+                <asp:TextBox placeholder="Correo" ID="txt_correo" runat="server" Class="form-control"></asp:TextBox>
                 <br />
                                  
-                <asp:TextBox placeholder="Dirección" ID="txtPKItem4" runat="server" Class="form-control" OnTextChanged="txtPKItem_TextChanged"></asp:TextBox>
+                <asp:TextBox placeholder="Dirección" ID="txt_direccion" runat="server" Class="form-control"></asp:TextBox>
                 <br />
                                       
-                <asp:TextBox placeholder="Estado" ID="txtPKItem5" runat="server" Class="form-control" OnTextChanged="txtPKItem_TextChanged"></asp:TextBox>
+                <asp:TextBox placeholder="Empresa" ID="txt_empresa" runat="server" Class="form-control"></asp:TextBox>
                 <br />
                                              
-                <asp:TextBox placeholder="Salario" ID="txtPKItem6" runat="server" Class="form-control" OnTextChanged="txtPKItem_TextChanged"></asp:TextBox>
+                <asp:TextBox placeholder="Salario" ID="txt_salario" runat="server" Class="form-control"></asp:TextBox>
                 <br />      
-                <asp:TextBox placeholder="Empresa" ID="txtPKItem9" runat="server" Class="form-control" OnTextChanged="txtPKItem_TextChanged"></asp:TextBox>
                 <br />
-                <asp:DropDownList ID="DropDownList1" runat="server">
+                 <asp:TextBox placeholder="monto" ID="txt_monto" runat="server" Class="form-control"></asp:TextBox>
+                <br />
+                
+                <asp:DropDownList ID="cbx_meses" runat="server">
                     <asp:ListItem Value="0"> 6 meses </asp:ListItem>
                     <asp:ListItem Value="1"> 12 meses </asp:ListItem>
                     <asp:ListItem Value="2"> 24 meses </asp:ListItem>
@@ -62,11 +64,10 @@
                 <br />
                 
                 <br />
-                <asp:Label ID="lblResultado" runat="server" Text=""></asp:Label>
                 <asp:Button class="btn btn-success" ID="btnSimular" runat="server" Text="Simular" OnClick="btnSimular_Click"/>
                 <br />
                 <br />
-                <asp:TextBox placeholder="Resultado" ID="TextBox1" runat="server"></asp:TextBox>
+                <asp:TextBox placeholder="Resultado" ID="lbl_mensaje" runat="server"></asp:TextBox>
             </div>
         </center>
          <p>
