@@ -14,9 +14,10 @@ namespace APP_Reto1
 
         }
 
-        protected void txtPKItem_TextChanged(object sender, EventArgs e)
+        protected void btnSimular_Click(object sender, EventArgs e)
         {
-
+            cls_conexion objcalcular = new cls_conexion();
+            objcalcular.fnt
         }
     }
 }

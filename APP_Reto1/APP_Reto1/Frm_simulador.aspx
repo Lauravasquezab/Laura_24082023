@@ -63,7 +63,7 @@
                 
                 <br />
                 <asp:Label ID="lblResultado" runat="server" Text=""></asp:Label>
-                <asp:Button class="btn btn-success" ID="btnSimular" runat="server" Text="Simular"/>
+                <asp:Button class="btn btn-success" ID="btnSimular" runat="server" Text="Simular" OnClick="btnSimular_Click"/>
                 <br />
                 <br />
                 <asp:TextBox placeholder="Resultado" ID="TextBox1" runat="server"></asp:TextBox>
